@@ -1,15 +1,16 @@
-package ru.hamming.paymentservice.service.handler;
+package ru.hamming.paymentservice.service.handler.impl;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+import ru.hamming.paymentservice.service.handler.PaymentTransactionCommandHandler;
 
 @Slf4j
 @Service
 @RequiredArgsConstructor
 public class CancelPaymentTransactionHandler implements PaymentTransactionCommandHandler {
     @Override
-    public void process() {
+    public void process(String message, String requestId) {
 
     }
 }

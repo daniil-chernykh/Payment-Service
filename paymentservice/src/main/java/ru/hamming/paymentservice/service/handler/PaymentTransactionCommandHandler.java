@@ -1,5 +1,5 @@
 package ru.hamming.paymentservice.service.handler;
 
 public interface PaymentTransactionCommandHandler {
-    void process();
+    void process(String message, String requestId);
 }
